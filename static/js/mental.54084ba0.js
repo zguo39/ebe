@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["mental"],{"446f":function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v("mental")])},l=[],c={},r=c,s=t("2877"),u=Object(s["a"])(r,a,l,!1,null,"1d36f291",null);n["default"]=u.exports}}]);
+//# sourceMappingURL=mental.54084ba0.js.map
