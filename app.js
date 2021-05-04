@@ -45,6 +45,32 @@ app.use((req, res, next) => {
 	next();
 });
 
+// api get game
+app.get('/api/game', async (req, res) => {
+	
+	let sqlquery = "Select * from master_games"
+	try {
+		data = await new Promise((resolve, reject) => {
+			connect.query(sqlquery, function(err, result) {
+				if (err) {
+					reject(err)
+				} else {
+					resolve(result)
+				}
+			})
+		})
+		responseInfo(res, {
+			data
+		})
+	} catch (e) {
+		//TODO handle the exception
+		responseInfo(res, {
+			code: 1,
+			codeText: e
+		})
+	}	
+})
+
 // api get video
 app.get('/api/type', async (req, res) => {
 	let {
